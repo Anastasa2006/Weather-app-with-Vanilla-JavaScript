@@ -427,52 +427,41 @@ body {
   .weather-app {
     padding: 20px 16px 24px;
   }
-
   .temperature {
     font-size: 3.4rem;
   }
-
   .temperature sup {
     font-size: 1.4rem;
   }
-
   .weather-icon-big {
     font-size: 3.8rem;
   }
-
   .city-name {
     font-size: 1rem;
   }
-
   .forecast-day {
     padding: 8px 12px;
     flex-wrap: wrap;
     gap: 4px;
   }
-
   .forecast-day-name {
     width: 60px;
     font-size: 0.85rem;
   }
-
   .extra-details {
     flex-wrap: wrap;
     gap: 12px;
   }
-
   .search-form {
     min-width: 100%;
   }
-
   .search-input {
     font-size: 0.85rem;
     padding: 8px 14px;
   }
-
   .header {
     gap: 10px;
   }
-
   .modal-content {
     padding: 20px;
   }
