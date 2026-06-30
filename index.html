@@ -15,35 +15,46 @@
       <div class="header">
         <div class="city-section">
           <i class="fas fa-map-pin city-icon"></i>
-          <span class="city-name">Москва</span>
+          <span class="city-name" id="cityName">Москва</span>
         </div>
-        <button class="search-btn" aria-label="Поиск города">
-          <i class="fas fa-search"></i>
-        </button>
+        <form id="searchForm" class="search-form">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Введите город..."
+            class="search-input"
+            autocomplete="off"
+          />
+          <button type="submit" class="search-btn" aria-label="Поиск города">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
       </div>
 
-      <div class="main-weather">
-        <div class="weather-icon-big">
+      <div class="main-weather" id="mainWeather">
+        <div class="weather-icon-big" id="weatherIcon">
           <i class="fas fa-cloud-sun"></i>
         </div>
-        <div class="temperature">18<sup>°C</sup></div>
-        <div class="weather-description">Переменная облачность</div>
+        <div class="temperature" id="temperature">18<sup>°C</sup></div>
+        <div class="weather-description" id="weatherDescription">
+          Переменная облачность
+        </div>
 
         <div class="extra-details">
           <div class="detail-item">
             <i class="fas fa-droplet"></i>
             <span class="detail-label">Влажность</span>
-            <span class="detail-value">62%</span>
+            <span class="detail-value" id="humidity">62%</span>
           </div>
           <div class="detail-item">
             <i class="fas fa-wind"></i>
             <span class="detail-label">Ветер</span>
-            <span class="detail-value">4 м/с</span>
+            <span class="detail-value" id="windSpeed">4 м/с</span>
           </div>
           <div class="detail-item">
             <i class="fas fa-eye"></i>
             <span class="detail-label">Видимость</span>
-            <span class="detail-value">10 км</span>
+            <span class="detail-value" id="visibility">10 км</span>
           </div>
         </div>
       </div>
@@ -52,7 +63,7 @@
         <div class="forecast-title">
           <i class="fas fa-calendar-alt"></i> Прогноз на 7 дней
         </div>
-        <div class="forecast-list">
+        <div class="forecast-list" id="forecastList">
           <div class="forecast-day">
             <span class="forecast-day-name">Пн</span>
             <span class="forecast-day-icon"
@@ -121,9 +132,17 @@
       </div>
 
       <div class="footer-note">
-        <span><i class="fas fa-sync-alt"></i> Обновлено: сегодня 14:30</span>
-        <span><i class="fas fa-map-marker-alt"></i> Москва, RU</span>
+        <span
+          ><i class="fas fa-sync-alt"></i> Обновлено:
+          <span id="updateTime">сегодня 14:30</span></span
+        >
+        <span
+          ><i class="fas fa-map-marker-alt"></i>
+          <span id="location">Москва, RU</span></span
+        >
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
